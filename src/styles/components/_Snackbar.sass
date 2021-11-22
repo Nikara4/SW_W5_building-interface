@@ -1,0 +1,58 @@
+.snackbar--div
+  position: fixed
+  bottom: 15px
+  left: 15px
+  border-radius: 5px
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3)
+  width: 40%
+  height: 7%
+  padding: 5px
+  transition: 0.5s
+  &__normal
+    background-color: #f1f2f6
+  &__success
+    background-color: #218c74
+    color: white
+  &__warning 
+    background-color: #ffb142
+    color: black
+  &__error 
+    background-color: #ff5252
+    color: white
+  &__information 
+    background-color: #34ace0
+    color: white
+  & div
+    position: absolute
+    font-family: sans-serif
+    font-size: 15px
+    top: 50%
+    transform: translateY(-50%)
+    left: 15px
+  & .snackbar--button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 10px
+    border: none
+    cursor: pointer
+    font-size: 15px
+    font-weight: bold
+    transition: 0.3s
+    &__normal
+      color: #227093
+      background-color: transparent
+    &__warning
+      color: #227093
+      background-color: transparent
+    &__error,
+    &__information,
+    &__success 
+       color: #f7f1e3
+       background-color: transparent
+    &:hover
+       color: #2c2c54
+
+.snackbar--button__show
+  +buttonBig
+

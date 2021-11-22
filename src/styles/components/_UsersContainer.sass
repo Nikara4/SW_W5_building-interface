@@ -1,0 +1,35 @@
+.users
+  width: 100%
+  &--h3
+    font-size: 18px
+    padding: 15px 0
+  &--search
+    width: 80%
+  &--p__no-match, &--p__loading
+    margin-top: 15px
+    font-size: 14px
+  &--ul
+    list-style: none
+  &--li
+    padding: 5px 0
+  &--link
+    +usersLink(#00b894, #2d3436)
+
+.search--form
+  padding: 5% 0
+
+.search--label
+  display: block
+  font-size: 15px
+  font-weight: bold
+  margin-bottom: 5px
+
+.search--input
+  width: 100%
+  font-size: 13px
+  padding: 7px
+  border-radius: 4px
+  border: 1px solid black
+
+.search--button__reset
+  +button(#e74c3c, #c0392b)

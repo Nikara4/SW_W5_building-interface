@@ -1,0 +1,54 @@
+.dialog
+  position: fixed
+  left: 0
+  top: 0
+  width: 60%
+  font-size: 16px
+  padding: 20px 20px
+  margin: 70px 220px
+  background-color: #40739e
+  color: #f5f6fa
+  border: 1px solid #f5f6fa
+  border-radius: 10px
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5)
+  z-index: 2
+  text-align: left
+  &--title
+    font-size: 26px
+    margin-bottom: 15px
+  &--text
+    font-size: 14px
+    margin-bottom: 25px
+  &--button__confirm
+    display: inline-block
+    margin-left: 200px
+    cursor: pointer
+    border: none
+    background-color: transparent
+    font-size: 18px
+    font-weight: bold
+    color: #7ed6df
+    text-transform: uppercase
+    letter-spacing: 2px
+  &--button__abort
+    margin-left: 50px
+  &--div__background
+    background-color: black
+    width: 100vw
+    height: 100vh
+    position: fixed
+    opacity: 0.3
+    top: 0
+    left: 0
+    z-index: -1
+  &--close
+    position: absolute
+    top: 23px
+    right: 23px
+    font-size: 23px
+    color: #f5f6fa
+    cursor: pointer
+
+.dialog--button
+  +buttonBig
+

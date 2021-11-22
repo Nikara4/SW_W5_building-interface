@@ -1,0 +1,24 @@
+.user
+  width: 80%
+  margin: 25px 0
+  &--profile
+    font-size: 16px
+    margin: 15px 0
+  & h2
+    font-size: 20px
+  & span
+    font-weight: bold
+    padding-right: 10px
+  & p
+    line-height: 34px
+    & a 
+      text-decoration: none
+      color: #0984e3
+      transition: .3s
+      &:hover
+        color: #2d3436
+  &--button
+    +button(#00b894, #636e72)
+    padding: 5px 40px
+    &__link
+      +usersLink(white, white)
